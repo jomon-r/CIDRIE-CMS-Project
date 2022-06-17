@@ -15,11 +15,11 @@ const Dough = () => {
   return (
     <div style={{
         position: 'absolute',
-        top: '90px',
-        right: 960,
+        top: '14.5%',
+        //right: 960,
         left: 0,
-        width: '380px',
-        height: '300px',
+        width: '29.4%',
+        height: '48%',
         border: '3px solid #73AD21',
         flex:1,
         display:'flex',
@@ -28,8 +28,8 @@ const Dough = () => {
        <div style={{
             background:'Blue',
             position: 'absolute',
-            width: '380px',
-            height: '20px',
+            width: '100%',
+            height: '7%',
             color: 'white',
             textAlign: 'center'
 
@@ -40,8 +40,8 @@ const Dough = () => {
           position: 'absolute',
           top: 30,
           left: 0,
-          width: '260px',
-          height: '230px',
+          width: '75%',
+          height: '85%',
           
         }}>
       <Doughnut
@@ -69,8 +69,8 @@ const Dough = () => {
             // },
           ],
         }}
-        height={'100px'}
-        width={'150px'}
+        height={'100%'}
+        width={'100%'}
         options={{
           maintainAspectRatio: false,
           scales: {
@@ -94,10 +94,10 @@ const Dough = () => {
       </div>
       <div style={{
         position: 'absolute',
-        top: '75px',
-        left: '260px',
-        width: '300px',
-        height: '300px',
+        top: '30%',
+        left: '72%',
+        width: '72%',
+        height: '92%',
         flex:1,
         display:'flex',
         flexDirection:'column', 

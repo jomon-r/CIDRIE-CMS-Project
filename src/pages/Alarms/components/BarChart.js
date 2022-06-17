@@ -2,43 +2,35 @@ import React, { useState,useEffect } from 'react'
 import { Bar } from 'react-chartjs-2'
 //import Client from '../client'
 import axios from 'axios'
-//defaults.global.tooltips.enabled = false
-//defaults.global.legend.position = 'bottom'
 
 const BarChart = () => {
   const keys = []
   const values = []
-  // var dict = {
-  //   'Z 1': 13,
-  //   'Z 2': 10,
-  //   'Z 3': 4,
-  //   'Z 4': 8,
-  //   'Z 5': 9,
-  //   'Z 6': 10,
-  //   'Z 7': 7,
-  //   'Z 8': 5,
-
-  
+ 
   
   const [zoneDetails,setZoneDetails] = useState([])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      axios.get('http://localhost:3001/').then((response)=>{
+        setZoneDetails(response.data);       
+     })
+    }, 10000);
+      return () => clearInterval(interval);
+  }, []);
     
-    useEffect(()=>{
-        axios.get('http://localhost:3001/').then((response)=>{
-            setZoneDetails(response.data);        })
-    },[]);
     zoneDetails.map((val,key)=>{
-      keys.push(val.Names);
-      values.push(val.Numbers)
+       keys.push(val.Names);
+       values.push(val.Numbers)
       
-    })
+     })
      
   return (
     <div style={{
       position: 'absolute',
-        top: '90px',
+        top: '14.5%',
         right: 0,
-        width: '670px',
-        height: '300px',
+        width: '52%',
+        height: '48%',
         border: '3px solid #73AD21',
         flex:1,
         display:'flex',
@@ -49,8 +41,8 @@ const BarChart = () => {
        <div style={{
             background:'Blue',
             position: 'absolute',
-            width: '670px',
-            height: '20px',
+            width: '100%',
+            height: '7%',
             color: 'white',
             textAlign: 'center'
 
@@ -59,10 +51,10 @@ const BarChart = () => {
         </div>
         <div style={{
           position: 'absolute',
-          top: 20,
+          top: '8%',
           right: 0,
-          width: '670px',
-          height: '280px',
+          width: '100%',
+          height: '92%',
           
         }}>
          <Bar
@@ -94,16 +86,11 @@ const BarChart = () => {
             ],
               borderWidth: 1,
             },
-            // {
-            //   label: 'Quantity',
-            //   data: [47, 52, 67, 58, 9, 50],
-            //   backgroundColor: 'orange',
-            //   borderColor: 'red',
-            // },
+            
           ],
         }}
-        height={200}
-        width={300}
+        height={'100%'}
+        width={'100%'}
        
         options={{
           maintainAspectRatio: false,

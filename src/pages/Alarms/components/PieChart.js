@@ -21,18 +21,18 @@ const PieChart = () => {
   return (
     <div style={{
         position: 'absolute',
-        top: '400px',
+        top: '64%',
         //right: 920,
         left: 0,
-        width: '380px',
-        height: '290px',
+        width: '29.4%',
+        height: '42%',
         border: '3px solid #73AD21',
     }}>
       <div style={{
             background:'Blue',
             position: 'absolute',
-            width: '380px',
-            height: '20px',
+            width: '100%',
+            height: '7%',
             color: 'white',
             textAlign: 'center'
 
@@ -41,10 +41,10 @@ const PieChart = () => {
         </div>
         <div style={{
           position: 'absolute',
-          top: 20,
+          top: '7%',
           left: 0,
-          width: '280px',
-          height: '250px',
+          width: '74%',
+          height: '90%',
           
         }}>
       <Pie
@@ -103,10 +103,10 @@ const PieChart = () => {
       /></div>
       <div style={{
         position: 'absolute',
-        top: '30px',
-        left: '270px',
-        width: '300px',
-        height: '300px',
+        top: '10%',
+        left: '70%',
+        width: '70%',
+        height: '100%',
         flex:2,
         //display:'flex',
         flexDirection:'column', 

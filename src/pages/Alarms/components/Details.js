@@ -17,9 +17,9 @@ const Details = () => {
             background:'White',
             position: 'absolute',
             right:0,
-            top: '400px',
-            width: '900px',
-            height: '290px',
+            top: '64%',
+            width: '69.5%',
+            height: '42%',
             color: 'white',
             textAlign: 'center',
             border: '3px solid #73AD21',
@@ -29,26 +29,26 @@ const Details = () => {
                 background:'Grey',
                 position: 'absolute',
                 right:0,
-                width: '900px',
-                height: '120px',
+                width: '100%',
+                height: '37%',
                 color: 'white',
                 textAlign: 'center',
-                flex:5,
+                flex:1,
                 display:'flex',
                 flexDirection:'row',  
         
                 
 
             }}>
-                <img src={day} alt="day" style={{height:70,width:70,margin:30}}/>
-                <h1 style={{marginRight: 50,marginTop:50}}> {dict['day']} </h1>
-                <img src={night} alt="night" style={{height:70,width:70,margin:30}}/>
-                <h1 style={{marginRight: 50,marginTop:50}}> {dict['night']}</h1>
+                <img src={day} alt="day" style={{height:'50%',width:'10%',margin:'3%'}}/>
+                <h1 style={{marginRight: '3%',marginTop:'3%'}}> {dict['day']} </h1>
+                <img src={night} alt="night" style={{height:'50%',width:'10%',margin:'3%'}}/>
+                <h1 style={{marginRight: '3%',marginTop:'3%'}}> {dict['night']}</h1>
 
-                <img src={maintain} alt="maintain" style={{height:70,width:70,margin:30}}/>
-                <h1 style={{marginRight: 50,marginTop:50}}> {dict['maintain']} </h1>
-                <img src={battery} alt="battery" style={{height:70,width:70,margin:30}}/>
-                <h1 style={{marginRight: 50,marginTop:50}}> {dict['battery']}</h1>
+                <img src={maintain} alt="maintain" style={{height:'50%',width:'10%',margin:'3%'}}/>
+                <h1 style={{marginRight: '3%',marginTop:'3%'}}> {dict['maintain']} </h1>
+                <img src={battery} alt="battery" style={{height:'50%',width:'10%',margin:'3%'}}/>
+                <h1 style={{marginRight: '3%',marginTop:'3%'}}> {dict['battery']}</h1>
 
             </div>
 

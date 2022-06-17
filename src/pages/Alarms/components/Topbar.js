@@ -5,9 +5,9 @@ const Topbar = () => {
         <div style={{
             background:'Grey',
             position: 'absolute',
-            top: '45px',
+            top: '7%',
             width: '100%',
-            height: '45px',
+            height: '7%',
             color: 'white',
             textAlign: 'center'
     

@@ -14,10 +14,10 @@ function Connectivity() {
     <div style={{
         background:'white',
         position: 'absolute',
-        top: '90px',
-        right: 680,
-        width: '220px',
-        height: '300px',
+        top: '14.5%',
+        right: '52.6%',
+        width: '17%',
+        height: '48%',
         border: '3px solid #73AD21',  
         flex:1,
         display:'flex',
@@ -27,8 +27,8 @@ function Connectivity() {
         <div style={{
             background:'Blue',
             position: 'absolute',
-            width: '220px',
-            height: '20px',
+            width: '100%',
+            height: '7%',
             color: 'white',
             textAlign: 'center'
 
@@ -42,7 +42,7 @@ function Connectivity() {
         flexDirection:'row',  
         alignItems: 'stretch',
     }}>
-        <img src={Net} alt="Net" style={{height:70,width:70,margin:12,marginTop:35}} />
+        <img src={Net} alt="Net" style={{height:'50%',width:'33%',margin:'5%',marginTop:'22%'}} />
         <h1 style={{marginTop:40}}>{dict['Net']}</h1>
      </div>
      <div style={{
@@ -51,7 +51,7 @@ function Connectivity() {
         flexDirection:'row',  
         
     }}>
-        <img src={wifi} alt="wifi" style={{height:70,width:70,margin:12 }}/>
+        <img src={wifi} alt="wifi" style={{height:'60%',width:'33%',margin:'5%'}}/>
         <h1>{dict['Wifi']}</h1>
     </div>
     <div style={{
@@ -60,7 +60,7 @@ function Connectivity() {
         flexDirection:'row',  
         
     }}>
-        <img src={wire} alt="wire" style={{height:70,width:70,margin:12}}/>
+        <img src={wire} alt="wire" style={{height:'60%',width:'33%',margin:'5%'}}/>
         <h1>{dict['Wire']}</h1>
 </div>
     </div>
