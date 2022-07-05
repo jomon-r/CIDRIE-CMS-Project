@@ -1,0 +1,38 @@
+label,input,select{
+    height: 28px;
+    margin-top: 5px;
+}
+input,select,textarea{
+    margin-left: 50px;
+}
+.center{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width:900px;
+}
+.left-side{
+    flex: 1;
+    flex-direction: column;
+    margin-top: 38px;
+    
+}
+.right-side{
+    flex: 1;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+.btn-form{
+    flex: 1;
+    flex-direction: column;
+    /* display: block;
+    margin: auto; */
+}
+
+
+
+.btn{
+    margin-left: 450px;
+}

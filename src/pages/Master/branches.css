@@ -1,0 +1,75 @@
+label,input,select{
+    
+    height: 26px;
+    margin-top: 5px;
+}
+input,select,textarea{
+    margin-left: 10px;
+}
+
+select.state{
+    color: white;
+    background-color: green;
+}
+select.state .active{
+    background-color: green;
+
+}
+select.state .bypass{
+    background-color:red;
+
+}
+select.state .disable{
+    background-color:grey;
+
+}
+
+.center{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width:100%;
+}
+.middle{
+    flex: 0.40;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+.right-side{
+    margin-left: 80px;
+    margin-top: 35px;
+
+}
+.right-side.input{
+    margin-left: 15px;
+    height:40px;
+    width: auto;
+}
+.btn-form{
+    flex: 1;
+    flex-direction: column;
+    /* display: block;
+    margin: auto; */
+}
+.btn-network{
+    background-color: green;
+}
+.btn-code{
+    background-color: grey;
+}
+.btn{
+    margin-left: 500px;
+}
+.text1{
+    margin-top: 250px;
+}
+
+

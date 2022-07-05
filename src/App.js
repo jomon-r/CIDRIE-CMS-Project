@@ -11,7 +11,7 @@ import Report from './pages/Report/Report'
 import Settings from './pages/Settings/Settings'
 import SOS from './pages/SOS/SOS'
 import Task from './pages/Task/Task'
-
+import Branches from './pages/Master/Branches'
 const App = () => {
   return (
     <Router>
@@ -25,6 +25,7 @@ const App = () => {
         <Route path='/Settings' element={<Settings/>} />
         <Route path='/SOS' element={<SOS/>} />
         <Route path='/Task' element={<Task/>}/>
+        <Route path='/Master/Branches' element={<Branches/>} />
       </Routes>
     </Router>
   );
